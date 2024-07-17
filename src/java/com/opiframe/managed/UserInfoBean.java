@@ -5,15 +5,12 @@
  */
 package com.opiframe.managed;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
-
+import javax.annotation.ManagedBean;
 /**
  *
  * @author Matti
  */
-@ManagedBean(name = "userInfoBean", eager = true)
-@RequestScoped
+@ManagedBean(value = "userInfoBean")
 public class UserInfoBean {
     private String name;
     private String address;
